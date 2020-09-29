@@ -6,6 +6,7 @@
     <title>My Homepage</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -53,47 +54,62 @@
             </div>
             <!-- Portfolio Items -->
             <div class="portfolio-item">
-                <div class="portfolio-img margin-right" data-aos="fade-up-right">
-                    <img src="./Assets/Weather.png">
+                <div class="portfolio-img item-1 margin-right" data-aos="fade-up-right">
+                    <a href="https://jxleilani.github.io/Weather/"><img src="./Assets/Weather.png"></a>
                 </div>
-                <div class="portfolio-desc">
+                <div class="portfolio-desc item-2">
                     <h6>Weather App</h6>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, beatae.
+                        A 7 day weather forecast,
+                        <br>searchable by location.
                     </p>
+                    <div class="icon">
+                        <a href="https://github.com/jxleilani/Weather"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item">
-                 <div class="portfolio-desc margin-right">
+                 <div class="portfolio-desc item-3 margin-right">
                     <h6>JavaScript Quiz</h6>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, beatae.
+                        Timed JavaScript Quiz
+                        <br>with high scores.
                     </p>
+                    <div class="icon">
+                        <a href="https://github.com/jxleilani/QuizApp"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-                <div class="portfolio-img" data-aos="fade-up-left">
-                    <img src="./Assets/QuizApp.png">
+                <div class="portfolio-img item 4" data-aos="fade-up-left">
+                    <a href="https://jxleilani.github.io/QuizApp/"><img src="./Assets/QuizApp.png"></a>
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-img margin-right"  data-aos="fade-up-right">
-                    <img src="./Assets/DayPlanner.png">
+                <div class="portfolio-img item-5 margin-right"  data-aos="fade-up-right">
+                    <a href="https://jxleilani.github.io/DayPlanner/"><img src="./Assets/DayPlanner.png"></a>
                 </div>
-                <div class="portfolio-desc">
+                <div class="portfolio-desc item-6">
                     <h6>Day Planner</h6>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, beatae.
+                        24 hour task planner.
                     </p>
+                    <div class="icon">
+                        <a href="https://github.com/jxleilani/DayPlanner"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-desc margin-right">
+                <div class="portfolio-desc item-7 margin-right">
                     <h6>Password Generator</h6>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, beatae.
+                        Create a random password based
+                        <br>on character type selection.
                     </p>
+                    <div class="icon">
+                        <a href="https://github.com/jxleilani/PasswordGenerator"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-                <div class="portfolio-img"  data-aos="fade-up-left">
-                    <img src="./Assets/PassGen.png">
+                <div class="portfolio-img tem-8"  data-aos="fade-up-left">
+                    <a href="https://jxleilani.github.io/PasswordGenerator/"><img src="./Assets/PassGen.png"></a>
                 </div>
             </div>
         </div>
@@ -107,9 +123,9 @@
             </div>
             <form action="">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Name..." required>
+                <input type="text" id="name" name="name" placeholder="Enter your name..." required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Email address..." required>
+                <input type="email" id="email" name="email" placeholder="Enter your email address..." required>
                 <label for="message">Message:</label>
                 <textarea name="message" id="message" cols="10" rows="10"></textarea>
                 <input type="submit" value="Submit">
@@ -117,7 +133,7 @@
         </div>
     </section>
      <footer class="copyright">
-        <p>&copy; Joy Meredith 2020</p>
+        <p>&copy;<span id="copyright"> Joy Meredith 2020</span></p>
     </footer>
 
 

@@ -46,9 +46,11 @@ section.about{
     display: block;
     text-decoration: none;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2rem;
     font-weight: 700;
     color: #fff;
+    text-shadow: 0 0 5px black,
+                5px 5px 10px black;
 }
 /* Animation styling for on hover over nav links */
 .nav ul li a::before{ 
@@ -66,6 +68,7 @@ section.about{
     background: linear-gradient(to right, #b344d4, #04c4c4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: none;
     opacity: 0;
     line-height: 100vh;
     transition: 2s;
@@ -120,10 +123,14 @@ section.about{
 }
 .name{
     display: flex;
+    
 }
 .name h1{
+    font-family: 'Cookie', cursive;
+    letter-spacing: 2px;
     margin: 0 auto;
-    font-size: 5rem;
+    padding: 10px;
+    font-size: 7rem;
     background: linear-gradient(to right, #b344d4, #04c4c4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -171,11 +178,14 @@ section.about{
 .section-heading h1{
     font-size: 5rem;
     color: #b344d4;
+    
 }
 .section-heading h6{
     font-size: 2rem;
     font-weight: 300;
     color: #fff;
+    text-shadow: 5px 5px 5px black,
+                5px 5px 10px black;
 }
 /* End Section Headings */
 
@@ -203,6 +213,15 @@ section.about{
     font-weight: 300;
     color: #04c4c4;
 }
+.portfolio-desc .icon{
+    font-size: 2rem;
+    margin-top: 7px;
+    cursor: pointer;
+    color: #04c4c4;
+}
+.portfolio-desc .icon a:visited{
+    color: #b344d4;
+}
 .margin-right{
     margin-right: 5rem;
 }
@@ -217,7 +236,10 @@ form{
     width: 70%;
 }
 form label{
-    /* font-size: 1.5rem; */
+    color: #b344d4;
+    font-weight: bold;
+    letter-spacing: 1px;
+
 }
 form input,
 form textarea{
@@ -231,6 +253,9 @@ input[type="submit"]{
     width: initial;
     background-color: #b344d4;
     padding: 10px 20px;
+    font-weight: bold;
+    font-size: .9rem;
+    letter-spacing: 1px;
     cursor: pointer;
     transition: background-color 650ms;
 }
@@ -243,21 +268,107 @@ input[type="submit"]:hover{
     position: relative;
     width: 100%;
     text-align: center;
-    padding: 2rem 0;
-    
+    padding: 2.5rem 0 1rem 0;
+}
+#copyright{
+    font-family: 'Cookie', cursive;
+    font-size: 1.5rem;
 }
 
 
-@media screen and (max-width: 375px){
-    body{
-        width: 100%;
-        margin: 0;
-        padding: 0;
+/* Media Queries */
+@media screen and (max-width: 993px){
+    .name h1{
+        font-size: 5rem;
     }
-    .name{
-        flex-wrap: nowrap;
+}
+@media screen and (max-width: 740px){
+    .hero{
+        top: 30%;
     }
     .name h1{
-        font-size: 1rem;
+        font-size: 4.5rem;
+    }
+    section{
+        margin: 0;
+    }
+    section.about{
+        margin-top: -60%;
+    }
+    .section-heading{
+        margin: 5.5rem 0 3rem 0;
+    }
+    .section-heading h1{
+        font-size: 3rem;
+    }
+    .section-heading h6{
+        font-size: 1.5rem;
+    }
+    .portfolio-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .margin-right{
+        margin: 0;
+    }
+    .item-1{
+        order: 1;
+    }
+    .item-2{
+        order: 2;
+    }
+    .item-3{
+        order: 1;
+    }
+    .item-4{
+        order: 2;
+    }
+    .item-5{
+        order: 1;
+    }
+    .item-6{
+        order: 2;
+    }
+    .item-7{
+        order: 1;
+    }
+    .item-8{
+        order: 2;
     }
 }
+@media screen and (max-width: 675px){
+    .name h1{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 612px){
+    .hero{
+        top: 20%;
+    }
+    .name h1{
+        font-size: 4rem;
+    }
+    section{
+        margin: 0;
+    }
+    section.about{
+        margin-top: -90%;
+    }
+    .section-heading{
+        text-align: center;
+        line-height: 20px;
+        margin: 6rem 0 2rem 0;
+    }
+    .section-heading h1{
+        font-size: 2rem;
+        color: #b344d4; 
+    }
+    .section-heading h6{
+        font-size: 1rem;
+        font-weight: 300;
+        color: #fff;
+        text-shadow: 5px 5px 5px black,
+                    5px 5px 10px black;
+    }
+}
+
