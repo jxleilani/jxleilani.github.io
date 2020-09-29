@@ -7,7 +7,18 @@
 body{
     background: #000;
     color: #fff;
+    overflow-x: hidden;
 }
+body.open{
+    overflow-y: hidden;
+}
+section{
+    margin: 150px 0;
+}
+section.about{
+    margin-top: -6%;
+}
+/* Nav Bar */
 .nav{
     position: relative;
     width: 100%;
@@ -39,7 +50,8 @@ body{
     font-weight: 700;
     color: #fff;
 }
-.nav ul li a::before{
+/* Animation styling for on hover over nav links */
+.nav ul li a::before{ 
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -51,7 +63,9 @@ body{
     text-align: center;
     font-size: 8rem;
     text-transform: uppercase;
-    color: #612e83;
+    background: linear-gradient(to right, #b344d4, #04c4c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     opacity: 0;
     line-height: 100vh;
     transition: 2s;
@@ -73,7 +87,7 @@ body{
     z-index: 1000;
 }
 .bar{
-    background: linear-gradient(to right, #693c92, #04c4c4);
+    background: linear-gradient(to right, #b344d4, #04c4c4);
     width: 100%;
     height: 4px;
     border-radius: 10px;
@@ -95,6 +109,7 @@ body{
 .bar-mid.open{
     display: none;
 }
+/* End Nav Bar */
 
 .hero{
     position: absolute;
@@ -109,6 +124,9 @@ body{
 .name h1{
     margin: 0 auto;
     font-size: 5rem;
+    background: linear-gradient(to right, #b344d4, #04c4c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .name h1::before{
     content: '';
@@ -119,6 +137,7 @@ body{
     background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
     animation: animate 5s linear forwards;
 }
+/* Animation for name */
 @keyframes animate{
     0%{
         left: -20%;
@@ -151,11 +170,12 @@ body{
 }
 .section-heading h1{
     font-size: 5rem;
-    opacity: .3;
+    color: #b344d4;
 }
 .section-heading h6{
     font-size: 2rem;
     font-weight: 300;
+    color: #fff;
 }
 /* End Section Headings */
 
@@ -181,6 +201,7 @@ body{
 .portfolio-desc h6{
     font-size: 1.5rem;
     font-weight: 300;
+    color: #04c4c4;
 }
 .margin-right{
     margin-right: 5rem;
@@ -208,7 +229,7 @@ form textarea{
 }
 input[type="submit"]{
     width: initial;
-    background-color: #693c92;
+    background-color: #b344d4;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 650ms;

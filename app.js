@@ -4,6 +4,7 @@ $('.menu-toggle').on('click', function() {
     $('.bar-start').toggleClass('open');
     $('.bar-mid').toggleClass('open');
     $('.bar-end').toggleClass('open');
+    $('body').toggleClass('open');
 });
 $('.nav-link').on('click', function() {
     $('.nav').toggleClass('open');
