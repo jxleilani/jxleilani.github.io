@@ -129,7 +129,7 @@ section.about{
     font-family: 'Cookie', cursive;
     letter-spacing: 2px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 3px;
     font-size: 7rem;
     background: linear-gradient(to right, #b344d4, #04c4c4);
     -webkit-background-clip: text;
@@ -196,16 +196,12 @@ section.about{
     justify-content: center;
     margin-bottom: 20px;
 }
-.portfolio-img{
-    flex: 1;
-}
 .portfolio-img img{
     width: 250px;
     height: 200px;
     border-radius: 8px;
 }
 .portfolio-desc{
-    flex: 2;
     text-align: center;
 }
 .portfolio-desc h6{
@@ -223,7 +219,7 @@ section.about{
     color: #b344d4;
 }
 .margin-right{
-    margin-right: 5rem;
+    margin-right: 150px;
 }
 /* End Portfolio */
 
@@ -282,28 +278,7 @@ input[type="submit"]:hover{
         font-size: 5rem;
     }
 }
-@media screen and (max-width: 740px){
-    .hero{
-        top: 30%;
-    }
-    .name h1{
-        font-size: 4.5rem;
-    }
-    section{
-        margin: 0;
-    }
-    section.about{
-        margin-top: -60%;
-    }
-    .section-heading{
-        margin: 5.5rem 0 3rem 0;
-    }
-    .section-heading h1{
-        font-size: 3rem;
-    }
-    .section-heading h6{
-        font-size: 1.5rem;
-    }
+@media screen and (max-width:955px){
     .portfolio-item{
         display: flex;
         flex-direction: column;
@@ -336,12 +311,54 @@ input[type="submit"]:hover{
         order: 2;
     }
 }
+@media screen and (max-width: 740px){
+    .hero{
+        top: 30%;
+    }
+    .name h1{
+        font-size: 4.5rem;
+    }
+    section{
+        margin: 0;
+    }
+    section.about{
+        margin-top: -60%;
+    }
+    .section-heading{
+        margin: 5.5rem 0 3rem 0;
+    }
+    .section-heading h1{
+        font-size: 3rem;
+    }
+    .section-heading h6{
+        font-size: 1.5rem;
+    }
+    .contact .container{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 720px){
+    section{
+        margin: 0;
+    }
+    section.about{
+        margin-top: -75%;
+    }
+}
 @media screen and (max-width: 675px){
     .name h1{
         font-size: 4rem;
     }
+    section{
+        margin: 0;
+    }
+    section.about{
+        margin-top: -80%;
+    }
 }
-@media screen and (max-width: 612px){
+
+@media screen and (max-width: 615px){
     .hero{
         top: 20%;
     }
@@ -352,7 +369,7 @@ input[type="submit"]:hover{
         margin: 0;
     }
     section.about{
-        margin-top: -90%;
+        margin-top: -100%;
     }
     .section-heading{
         text-align: center;
@@ -370,5 +387,104 @@ input[type="submit"]:hover{
         text-shadow: 5px 5px 5px black,
                     5px 5px 10px black;
     }
+}
+@media screen and (max-width: 611px){
+    .name h1{
+        font-size: 3.8rem;
+    }
+}
+@media screen and (max-width: 600px){
+        section{
+            margin: 0;
+        }
+        section.about{
+            margin-top: -110%;
+        }
+}
+@media screen and (max-width: 560px){
+        section{
+            margin: 0;
+        }
+        section.about{
+            margin-top: -120%;
+        }
+}
+/* iphone 6/7/8 plus */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    section{
+        margin: 0;
+    }
+    section.about{
+        margin-top: -120%;
+    }
+    .container{
+        width: 80%;
+    }
+    .nav ul{
+        align-items: center;
+    }
+    .nav ul li a{
+        background: linear-gradient(to right, #b344d4, #04c4c4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline;
+        text-shadow: none;
+    }
+}
+/* iphone 6/7/8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait){
+        section{
+            margin: 0;
+        }
+        section.about{
+            margin-top: -120%;
+        }
+        .container{
+            width: 80%;
+        }
+        .nav ul{
+            align-items: center;
+        }
+        .nav ul li a{
+            background: linear-gradient(to right, #b344d4, #04c4c4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline;
+            text-shadow: none;
+        }
+}
+/* iphone x */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+        section{
+            margin: 0;
+        }
+        section.about{
+            margin-top: -150%;
+        }
+        .container{
+            width: 80%;
+        }
+        .nav ul{
+            align-items: center;
+        }
+        .nav ul li a{
+            background: linear-gradient(to right, #b344d4, #04c4c4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline;
+            text-shadow: none;
+        }
 }
 
