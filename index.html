@@ -3,64 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <header>
-            <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Portfolio</a></li>
-            </ul>
-    </header>
-    <div class="container">
-        <div class="box">
-            <div class="imgBx">
-                <div id="aboutme"><h1>Hi, I'm Joy!</h1></div>
-            </div>
-            <div class="contentBx">
-                <div>
-                    <p>image to come!</p>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBx">
-                <div id="work"><h1>Work History</h1></div>
-            </div>
-            <div class="contentBx contentbox2">
-                <div>
-                    <p>
-                        Currently attending Full Stack Web Development Boot Camp.
-                        <br><br>7+ years of experience organizing and maintaining sensitive data for 40,000+ constituents. 
-                        <br><br>Aptitude for learning and propensity for attention to detail and organization. Excellence in problem solving, analytical thinking, communication, and customer service. 
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBx">
-                <div id="facts"><h1>Education</h1></div>
-            </div>
-            <div class="contentBx">
-                <div>
-                    <p>
-                        <span class="degree">Full Stack Development</span>
-                        <br>Boot Camp, Certificate
-                        <br><em><span style="color: #9c9c9c;">currently attending</span></em>
-                        <br><br><em><span class="degree">Master of Science:</span></em>
-                        <br>Information Technology
-                        <br><em><span style="color: #9c9c9c;">completion date: 2022</span></em>
-                        <br><br><em><span class="degree">Bachelor of Science:</span></em>
-                        <br><strong>Major:</strong> Economics
-                        <br><strong>Minor:</strong> Information Technology
-                    </p>
-                </div>
-            </div>
+    <div class="menu-toggle">
+        <div class="bar bar-start"></div>
+        <div class="bar bar-mid"></div>
+        <div class="bar bar-end"></div>
+    </div>
+    <nav class="nav">
+        <ul>
+            <li class="nav-link"><a href="#" data-text="Home">Home</a></li>
+            <li class="nav-link"><a href="#about" data-text="About">About</a></li>
+            <li class="nav-link"><a href="#portfolio" data-text="Portfolio">Portfolio</a></li>
+            <li class="nav-link"><a href="#experience" data-text="Experience">Experience</a></li>
+            <li class="nav-link"><a href="#education" data-text="Education">Education</a></li>
+            <li class="nav-link"><a href="#contact" data-text="Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <div class="name">
+        <h1>Joy Meredith</h1>
         </div>
     </div>
 
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-details">
+                <div class="section-heading">
+                    <h1>About</h1>
+                    <h6>Myself</h6>
+                </div>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis commodi repudiandae modi est, provident voluptatum quos doloribus tempore maxime officia. Atque fugiat iste labore neque repellat et quos assumenda odit maxime iure nobis ipsam quisquam quo veritatis nulla ab dolores sequi inventore quia, reprehenderit eveniet sapiente. Illum ratione dicta iure?
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Portfolio</h1>
+                <h6>Recent projects</h6>
+            </div>
+            <!-- Portfolio Items -->
+            <div class="portfolio-item">
+                <div class="portfolio-img margin-right" data-aos="fade-up-right">
+                    <img src="./Assets/Weather.png">
+                </div>
+                <div class="portfolio-desc">
+                    <h6>Weather App</h6>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, beatae.
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                 <div class="portfolio-desc margin-right">
+                    <h6>JavaScript Quiz</h6>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, beatae.
+                    </p>
+                </div>
+                <div class="portfolio-img" data-aos="fade-up-left">
+                    <img src="./Assets/QuizApp.png">
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img margin-right"  data-aos="fade-up-right">
+                    <img src="./Assets/DayPlanner.png">
+                </div>
+                <div class="portfolio-desc">
+                    <h6>Day Planner</h6>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, beatae.
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-desc margin-right">
+                    <h6>Password Generator</h6>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, beatae.
+                    </p>
+                </div>
+                <div class="portfolio-img"  data-aos="fade-up-left">
+                    <img src="./Assets/PassGen.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Contact</h1>
+                <h6>Contact me here</h6>
+            </div>
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name..." required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email address..." required>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="10" rows="10"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+     <footer class="copyright">
+        <p>&copy; Joy Meredith 2020</p>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
