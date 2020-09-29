@@ -3,138 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homepage</title>
+    <title>Joy Meredith</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="menu-toggle">
-        <div class="bar bar-start"></div>
-        <div class="bar bar-mid"></div>
-        <div class="bar bar-end"></div>
-    </div>
-    <nav class="nav">
-        <ul>
-            <li class="nav-link"><a href="#" data-text="Home">Home</a></li>
-            <li class="nav-link"><a href="#about" data-text="About">About</a></li>
-            <li class="nav-link"><a href="#portfolio" data-text="Portfolio">Portfolio</a></li>
-            <li class="nav-link"><a href="#experience" data-text="Experience">Experience</a></li>
-            <li class="nav-link"><a href="#education" data-text="Education">Education</a></li>
-            <li class="nav-link"><a href="#contact" data-text="Contact">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="hero">
-        <div class="name">
-        <h1>Joy Meredith</h1>
+    <div class="wrapper">
+        <div class="menu-toggle">
+            <div class="bar bar-start"></div>
+            <div class="bar bar-mid"></div>
+            <div class="bar bar-end"></div>
         </div>
-    </div>
+        <nav class="nav">
+            <ul>
+                <li class="nav-link"><a href="#" data-text="Home">Home</a></li>
+                <li class="nav-link"><a href="#about" data-text="About">About</a></li>
+                <li class="nav-link"><a href="#portfolio" data-text="Portfolio">Portfolio</a></li>
+                <li class="nav-link"><a href="#experience" data-text="Experience">Experience</a></li>
+                <li class="nav-link"><a href="#education" data-text="Education">Education</a></li>
+                <li class="nav-link"><a href="#contact" data-text="Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="name">
+            <h1>Joy Meredith</h1>
+            </div>
+        </div>
 
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-details">
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-details">
+                    <div class="section-heading">
+                        <h1>About</h1>
+                        <h6>Myself</h6>
+                    </div>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis commodi repudiandae modi est, provident voluptatum quos doloribus tempore maxime officia. Atque fugiat iste labore neque repellat et quos assumenda odit maxime iure nobis ipsam quisquam quo veritatis nulla ab dolores sequi inventore quia, reprehenderit eveniet sapiente. Illum ratione dicta iure?
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Portfolio -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
                 <div class="section-heading">
-                    <h1>About</h1>
-                    <h6>Myself</h6>
+                    <h1>Portfolio</h1>
+                    <h6>Recent projects</h6>
                 </div>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis commodi repudiandae modi est, provident voluptatum quos doloribus tempore maxime officia. Atque fugiat iste labore neque repellat et quos assumenda odit maxime iure nobis ipsam quisquam quo veritatis nulla ab dolores sequi inventore quia, reprehenderit eveniet sapiente. Illum ratione dicta iure?
-                </p>
-            </div>
-            
-        </div>
-    </section>
-    <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Portfolio</h1>
-                <h6>Recent projects</h6>
-            </div>
-            <!-- Portfolio Items -->
-            <div class="portfolio-item">
-                <div class="portfolio-img item-1 margin-right" data-aos="fade-up-right">
-                    <a href="https://jxleilani.github.io/Weather/"><img src="./Assets/Weather.png"></a>
+                <!-- Portfolio Items -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img item-1 margin-right" data-aos="fade-up-right">
+                        <a href="https://jxleilani.github.io/Weather/"><img src="./Assets/Weather.png"></a>
+                    </div>
+                    <div class="portfolio-desc item-2">
+                        <h6>Weather App</h6>
+                        <p>
+                            A 7 day weather forecast,
+                            <br>searchable by location.
+                        </p>
+                        <div class="icon">
+                            <a href="https://github.com/jxleilani/Weather"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="portfolio-desc item-2">
-                    <h6>Weather App</h6>
-                    <p>
-                        A 7 day weather forecast,
-                        <br>searchable by location.
-                    </p>
-                    <div class="icon">
-                        <a href="https://github.com/jxleilani/Weather"><i class="fab fa-github"></i></a>
+                <div class="portfolio-item">
+                    <div class="portfolio-desc item-3 margin-right">
+                        <h6>JavaScript Quiz</h6>
+                        <p>
+                            Timed JavaScript Quiz
+                            <br>with high scores.
+                        </p>
+                        <div class="icon">
+                            <a href="https://github.com/jxleilani/QuizApp"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-img item 4" data-aos="fade-up-left">
+                        <a href="https://jxleilani.github.io/QuizApp/"><img src="./Assets/QuizApp.png"></a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img item-5 margin-right"  data-aos="fade-up-right">
+                        <a href="https://jxleilani.github.io/DayPlanner/"><img src="./Assets/DayPlanner.png"></a>
+                    </div>
+                    <div class="portfolio-desc item-6">
+                        <h6>Day Planner</h6>
+                        <p>
+                            24 hour task planner.
+                        </p>
+                        <div class="icon">
+                            <a href="https://github.com/jxleilani/DayPlanner"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-desc item-7 margin-right">
+                        <h6>Password Generator</h6>
+                        <p>
+                            Create a random password based
+                            <br>on character type selection.
+                        </p>
+                        <div class="icon">
+                            <a href="https://github.com/jxleilani/PasswordGenerator"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-img tem-8"  data-aos="fade-up-left">
+                        <a href="https://jxleilani.github.io/PasswordGenerator/"><img src="./Assets/PassGen.png"></a>
                     </div>
                 </div>
             </div>
-            <div class="portfolio-item">
-                 <div class="portfolio-desc item-3 margin-right">
-                    <h6>JavaScript Quiz</h6>
-                    <p>
-                        Timed JavaScript Quiz
-                        <br>with high scores.
-                    </p>
-                    <div class="icon">
-                        <a href="https://github.com/jxleilani/QuizApp"><i class="fab fa-github"></i></a>
-                    </div>
+        </section>
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Contact</h1>
+                    <h6>Contact me here</h6>
                 </div>
-                <div class="portfolio-img item 4" data-aos="fade-up-left">
-                    <a href="https://jxleilani.github.io/QuizApp/"><img src="./Assets/QuizApp.png"></a>
-                </div>
+                <form action="">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address..." required>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="10" rows="10"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img item-5 margin-right"  data-aos="fade-up-right">
-                    <a href="https://jxleilani.github.io/DayPlanner/"><img src="./Assets/DayPlanner.png"></a>
-                </div>
-                <div class="portfolio-desc item-6">
-                    <h6>Day Planner</h6>
-                    <p>
-                        24 hour task planner.
-                    </p>
-                    <div class="icon">
-                        <a href="https://github.com/jxleilani/DayPlanner"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-desc item-7 margin-right">
-                    <h6>Password Generator</h6>
-                    <p>
-                        Create a random password based
-                        <br>on character type selection.
-                    </p>
-                    <div class="icon">
-                        <a href="https://github.com/jxleilani/PasswordGenerator"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="portfolio-img tem-8"  data-aos="fade-up-left">
-                    <a href="https://jxleilani.github.io/PasswordGenerator/"><img src="./Assets/PassGen.png"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Contact</h1>
-                <h6>Contact me here</h6>
-            </div>
-            <form action="">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name..." required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email address..." required>
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" cols="10" rows="10"></textarea>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </section>
-     <footer class="copyright">
-        <p>&copy;<span id="copyright"> Joy Meredith 2020</span></p>
-    </footer>
+        </section>
+        <footer class="copyright">
+            <p>&copy;<span id="copyright"> Joy Meredith 2020</span></p>
+        </footer>
+    </div>
+    
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

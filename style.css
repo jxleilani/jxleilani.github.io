@@ -18,6 +18,9 @@ section{
 section.about{
     margin-top: -6%;
 }
+.wrapper{
+    overflow-x: hidden;
+}
 /* Nav Bar */
 .nav{
     position: relative;
@@ -338,14 +341,6 @@ input[type="submit"]:hover{
     }
     
 }
-@media screen and (max-width: 720px){
-    section{
-        margin: 0;
-    }
-    section.about{
-        margin-top: -75%;
-    }
-}
 @media screen and (max-width: 675px){
     .name h1{
         font-size: 4rem;
@@ -354,7 +349,7 @@ input[type="submit"]:hover{
         margin: 0;
     }
     section.about{
-        margin-top: -80%;
+        margin-top: -60%;
     }
 }
 
@@ -369,7 +364,7 @@ input[type="submit"]:hover{
         margin: 0;
     }
     section.about{
-        margin-top: -100%;
+        margin-top: -90%;
     }
     .section-heading{
         text-align: center;
@@ -398,17 +393,18 @@ input[type="submit"]:hover{
             margin: 0;
         }
         section.about{
-            margin-top: -110%;
+            margin-top: -90%;
         }
 }
-@media screen and (max-width: 560px){
-        section{
-            margin: 0;
-        }
-        section.about{
-            margin-top: -120%;
-        }
+@media screen and (max-width: 515px){
+    section{
+        margin: 0;
+    }
+    section.about{
+        margin-top: -100%;
+    }
 }
+
 /* iphone 6/7/8 plus */
 @media only screen 
   and (min-device-width: 414px) 
@@ -467,6 +463,10 @@ input[type="submit"]:hover{
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
+        .menu-toggle{
+            top: 10px;
+            right: 10px;
+        }
         section{
             margin: 0;
         }
