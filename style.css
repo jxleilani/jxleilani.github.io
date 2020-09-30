@@ -343,6 +343,11 @@ section.about{
         order: 2;
     }
 }
+@media screen and (max-width: 880px){
+    .nav ul li a::before{
+        font-size: 6rem;
+    }
+}
 @media screen and (max-width: 850px){
     .edu-details{
         display: flex;
@@ -377,8 +382,10 @@ section.about{
     }
     .contact .container{
         width: 100%;
+    }    
+    .nav ul li a::before{
+        font-size: 5rem;
     }
-    
 }
 @media screen and (max-width: 675px){
     .name h1{
@@ -440,6 +447,9 @@ section.about{
         }
         section.about{
             margin-top: -90%;
+        }
+        .nav ul li a::before{
+            font-size: 4rem;
         }
 }
 @media screen and (max-width: 515px){
