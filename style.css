@@ -231,6 +231,27 @@ section.about{
 .experience .container{
     line-height: 1.3rem;;
 }
+.resume-btn{
+    display: flex;
+    align-items: center;
+}
+.resume-btn a{
+    margin: 10px auto 0;
+}
+
+.exp-details button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #b344d4;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background .5s ease-out;
+}
+.exp-details button:hover{
+    background: #04c4c4;
+}
 .edu-details{
     display: flex;
     justify-content: space-between;
@@ -245,42 +266,31 @@ section.about{
 }
 /* End Experience and Education */
 
-/* Contact Form */
+/* Contact */
 .contact{
-
+    height: 100px;
 }
-form{
+.icon-container{
+    display: flex;
     margin: 0 auto;
-    width: 70%;
+    justify-content: center;
+    width: 50%;
 }
-form label{
-    color: #b344d4;
-    font-weight: bold;
-    letter-spacing: 1px;
-
-}
-form input,
-form textarea{
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    border: none;
-    border-radius: 5px;
-}
-input[type="submit"]{
-    width: initial;
-    background-color: #b344d4;
-    padding: 10px 20px;
-    font-weight: bold;
-    font-size: .9rem;
-    letter-spacing: 1px;
+.icon-item{
+    margin: 10px;
+    font-size: 3rem;
     cursor: pointer;
-    transition: background-color 650ms;
 }
-input[type="submit"]:hover{
-    background-color: #04c4c4;
+.icon-item i{
+    color: #04c4c4;
+    transition: color .5s ease-out;
 }
-/* End Contact Form */
+.icon-item i:hover,
+.icon-item i:visited{
+    color: #b344d4;
+}
+
+/* End Contact*/
 
 .copyright{
     position: relative;
@@ -410,6 +420,13 @@ input[type="submit"]:hover{
         color: #fff;
         text-shadow: 5px 5px 5px black,
                     5px 5px 10px black;
+    }
+    .icon-item{
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    .exp-details button{
+        font-size: .8rem;;
     }
 }
 @media screen and (max-width: 611px){
