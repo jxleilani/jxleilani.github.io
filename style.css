@@ -170,13 +170,14 @@ section.about{
     display: flex; 
     align-items: center;
     justify-content: center;
+    line-height: 1.3rem;
 }
 
 /* Section Headings */
 .section-heading{
     text-align: center;
     line-height: 0;
-    margin: 6rem 0;
+    margin: 6rem 0 4rem;
 }
 .section-heading h1{
     font-size: 5rem;
@@ -197,7 +198,7 @@ section.about{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .portfolio-img img{
     width: 250px;
@@ -225,6 +226,24 @@ section.about{
     margin-right: 150px;
 }
 /* End Portfolio */
+
+/* Experience and Education */
+.experience .container{
+    line-height: 1.3rem;;
+}
+.edu-details{
+    display: flex;
+    justify-content: space-between;
+}
+.degree{
+    color: #04c4c4;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.edu-desc{
+    margin: 0 20px;
+}
+/* End Experience and Education */
 
 /* Contact Form */
 .contact{
@@ -261,7 +280,7 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color: #04c4c4;
 }
-/* Contact Form End */
+/* End Contact Form */
 
 .copyright{
     position: relative;
@@ -312,6 +331,16 @@ input[type="submit"]:hover{
     }
     .item-8{
         order: 2;
+    }
+}
+@media screen and (max-width: 850px){
+    .edu-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .edu-desc{
+        margin-bottom: 15px;
+        text-align: center;
     }
 }
 @media screen and (max-width: 740px){
