@@ -542,5 +542,15 @@ section.about{
             display: inline;
             text-shadow: none;
         }
+        @keyframes animate{
+            0%{
+                transform: scaleX(1);
+                left: -20%;
+            }
+            100%{
+                transform: scaleX(0);
+                left: 90%;
+            }
+        }
 }
 
