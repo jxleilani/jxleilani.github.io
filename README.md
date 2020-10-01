@@ -1,4 +1,4 @@
-## Welcome to my page!
+## Welcome to my GitHub!
 
 https://jxleilani.github.io/
 
