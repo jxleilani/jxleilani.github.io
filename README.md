@@ -2,7 +2,7 @@
 
 https://jxleilani.github.io/
 
-![Screenshot of site](https://jxleilani.github.io/Assets/screenshot.png)
+![Screenshot of site](https://jxleilani.github.io/Assets/img/screenshot.png)
 
 ------------
 * [About](https://jxleilani.github.io/#about)
