@@ -561,3 +561,9 @@ section.about{
         }
 }
 
+@media screen and (max-width: 375px){
+  .section-heading h6{
+    margin-top: -5px;
+  }
+}
+
